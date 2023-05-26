@@ -68,7 +68,7 @@ app.Map("/favicon.ico", (app) => { });
 // But Run() extension method will terminate the request processing pipeline. The below code will not call the next middlewares, if any.
 app.Run(async context => {
     Console.WriteLine("hello world");
-    await context.Response.WriteAsync("Hello World from inline run extention method");
+    await context.Response.WriteAsync("Hello World from inline Run extention method");
 });
 
 
